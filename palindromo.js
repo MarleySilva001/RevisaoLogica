@@ -5,4 +5,4 @@ function palindromo(str){
     return reverseStr === lowRegStr
 }
 
-console.log(palindromo('Ovi'))
+console.log(palindromo('Ovo'))
