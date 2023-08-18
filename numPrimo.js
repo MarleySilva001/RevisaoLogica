@@ -1,10 +1,10 @@
-function factorialize (numero){
-    if (numero === 0 || numero === 1)
-        return 1
-    for(var i = numero - 1; i >= 1; i--){
-        numero *= i
+function NumPrimo (number){
+    for(var i = 2; i < number; i++){
+        if(number % i === 0){
+            return false
+        }
     }
-    return numero
+    return number !== 1
 }
 
-console.log (factorialize(6))
+console.log(NumPrimo(5))
